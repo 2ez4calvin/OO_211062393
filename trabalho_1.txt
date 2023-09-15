@@ -1,0 +1,121 @@
+Class Ponto();
+
+private:
+
+int x;
+int y;
+
+public:
+
+função_define_ponto(){
+	print("Defina o X da sua coordenada");
+	input X;
+	print("Defina o Y da sua coordenada");
+	input Y;
+função_mostra_ponto(){
+	print("Sua coordenada é: " X , Y);
+}
+Class Circulo(): Public Ponto;{
+
+private:
+
+float raio;
+
+public:
+
+função_define_raio(){
+	função_define_ponto()
+	print("Digite o raio desejado do circulo no ponto: ");
+	input raio;
+}
+função_calcula_area(){
+	area= (raio * raio)* 3.14; 
+	print("A Area do circulo é de: " area)}
+}
+
+class Linha(){
+
+private:
+
+int x1,x2,y1,y2;
+
+public:
+função_define_linha(){
+	Print("Defina a coordenada do primeiro ponto");
+	input x1,y1;
+	Print("Defina a coordenada do segundo ponto");
+	input x2,y2;
+}
+
+funçao_imprime_linha(){
+print("O primeiro ponto da linha: " x1 , y1);
+print("O segundoo ponto da linha: " x2 , y2)
+
+}
+
+}
+
+Class Forma(){
+
+private:
+
+int x11,y11,x22,y22,x33,y33,x44,y44;
+
+public:
+
+define_forma_reta(){
+
+print("Defina o primeiro ponto da linha de baixo da forma reta: ");
+input x11,y11;
+print("Defina o segundo ponto da linha de baixo da forma reta: ");
+input x22,y22;
+
+do{print("Insira um valor valido para a linha de baixo (É necessario que a linha de baixo fique reta)"}while(y11 != y22);
+
+
+print("Defina o primeiro ponto da linha de cima da forma reta: ");
+input x33,y33;
+print("Defina o segundo ponto da linha de cima da forma reta: ");
+input x44,y44;
+
+do{print("Insira um valor valido para a linha de cima (É necessario que a linha de baixo fique reta)"}while(y33 != y44);
+
+linha1 = (x11,y11) (x33,y33);
+linha2 = (x11,y11) (x22,y22);
+if(linha1 == linha2){
+print("A forma inserida gerou um quadrado. As coordenadas do quadrado são: " (x11,y11)(x22,y22)(x33,y33)(x44,y44)  )
+}
+else{
+print("A forma inserida gerou um retangulo. As coordenadas do retangulo são: " (x11,y11)(x22,y22)(x33,y33)(x44,y44)  )}
+
+
+}
+
+
+
+Programa Principal(){
+
+Ponto.p1;
+
+p1.função_define_ponto();  	""" X = -4  Y = 2 """
+p1.função_mostra_ponto();       Saida: Sua coordenada é -4 , 2 .
+
+Circulo.c1;
+c1.define_raio(); 	""" X = 4 Y = 2 raio = 2 """
+c1.calcula_area();      Saida: A area do circulo é de : 12.56.x'
+
+Linha.l1;
+l1.função_define_linha(); 	""" X1 = -2  Y1 = -2   X2 = -4  Y2 = -4 """
+
+Forma.f1;
+f1.define_forma_reta();  	 """X1= -4  Y1 = 6  X2= -8  Y2 = 6  X3= -4  Y3 = 10 X1= -8  Y1 = 10   " Saida: A forma inserida gerou um quadrado
+Forma.f2;
+f2.define_forma_reta(); 	 """X1= 4  Y1 = -6  X2= 10  Y2 = -6  X3= 4  Y3 = -8 X1= 10  Y1 = -8   " Saida: A forma inserida gerou um retangulo
+
+
+
+}
+
+
+
+
