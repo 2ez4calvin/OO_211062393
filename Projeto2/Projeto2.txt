@@ -1,0 +1,2 @@
+O projeto 2 é uma copia do projeto 1, só que transcrito em python devidamente. 
+Diferente do primeiro trabalho, esse codigo vem com 2 novas funções, a de calcular a distância da linha e a de calcular a área de um retangulo ou de um quadrado
